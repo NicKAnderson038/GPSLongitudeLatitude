@@ -1,1 +1,1 @@
-# React Clipboard Tool
+# GPS Validator
