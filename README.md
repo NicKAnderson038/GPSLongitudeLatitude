@@ -1,2 +1,1 @@
-# GPSLongitudeLatitude
-Created with CodeSandbox
+# React Clipboard Tool
