@@ -1,19 +1,18 @@
 import React, { useState } from 'react'
 import TextField from '@material-ui/core/TextField'
+import { validationLatitudeLongitude } from "validation-latitude-longitude";
 
 import './styles.css'
 
 function Gps(props) {
   const [latLong, setLatLong] = useState(true)
-
+  
   const lable = latLong ? props.placeholder : 'Error'
   const coordinates = val => {
-    const lat = /^(\+|-)?(?:90(?:(?:\.0{1,6})?)|(?:[0-9]|[1-8][0-9])(?:(?:\.[0-9]{1,6})?))$/
-    const long = /^(\+|-)?(?:180(?:(?:\.0{1,6})?)|(?:[0-9]|[1-9][0-9]|1[0-7][0-9])(?:(?:\.[0-9]{1,6})?))$/
     if (props.placeholder.toLowerCase() === 'latitude') {
-      setLatLong(lat.test(val))
+      setLatLong(validationLatitudeLongitude.latitude(val))
     } else {
-      setLatLong(long.test(val))
+      setLatLong(validationLatitudeLongitude.longitude(val))
     }
   }
 

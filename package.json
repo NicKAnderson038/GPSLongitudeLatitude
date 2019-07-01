@@ -11,7 +11,8 @@
     "react": "16.8.6",
     "react-dom": "16.8.6",
     "react-scripts": "2.1.8",
-    "react-toastify": "5.1.0"
+    "react-toastify": "5.1.0",
+    "validation-latitude-longitude": "1.0.3"
   },
   "devDependencies": {
     "typescript": "3.3.3"

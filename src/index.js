@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import ReactDOM from "react-dom";
 
 import "./styles.css";
@@ -19,6 +19,7 @@ function App() {
         <br />
         <NewDate title={"Date"} />
       </div>
+      <br/>
       <br/>
       <div className="forms">
         <br />
